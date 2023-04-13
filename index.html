@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira project</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="\rambabu\callbacks\signup && login">
+</head>
+<body>
+    <div class="container">
+        <button type="button" id="button" onclick="modal()">
+Open modal
+        </button>
+        <div id="task">
+            <div id="to-start"><h4>TO start</h4>
+            <ul id="ul-start">
+
+            </ul>
+            </div>
+            <div id="pending"><h4>Pending</h4>
+            <ul id="ul-pending">
+
+            </ul>
+            </div>
+            <div id="completed"><h4>Completed</h4>
+            <ul id="ul-completed">
+                
+            </ul>
+            </div>
+        </div>
+        <div class="modal" id="k">
+           <div class="kk" id="gg">
+            <div>
+                <label for="name" id="rr">Task</label>
+                <input type="text" id="name" placeholder="enter your task" required>
+                </div>
+                <div>
+                    <label for="date" id="rr">Date</label>
+                    <input type="date" id="date" required>
+                    </div>
+                    <div>
+                       <label for="sel" id="rr">select one</label>
+                       <select name="sel" id="sel">
+                        <option value=""></option>
+                        <option value="to-start">to start</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                       </select>
+                        </div>
+                        <div class="popButton">
+                            <div>          <button type="submit" onclick="AddTask()" id="add">ADD Task</button>
+                            </div>
+                   
+                      
+       <div>     
+        <button type="button" onclick="close1()">Close_Pop</button>
+    </div>
+        </div>
+          
+        </div>
+    </div>
+    <script src="./index.js"> </script>
+</body>
+</html>
